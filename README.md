@@ -38,9 +38,14 @@ Note, I recently switched the overlay to use flakes by default with flakes-compa
 
 Install neovim-nightly:
 ```
-nix-env -iA pkgs.neovim-nightly
+nix-env -iA pkgs.neovim
 ```
 or add to home-manager/configuration.nix.
+
+Install with flakes:
+```
+nix profile --substituters https://nix-community.cachix.org --trusted-public-keys nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs= install github:nix-community/neovim-nightly-overlay#neovim
+```
 
 # Binary cache
 
